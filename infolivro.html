@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Livre-se | Quem é você, Alasca?</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5KwQdfQ5o9wABWvcFWF+rY6+BLpNJ0ceXchPR+FJwSpXqfxxhp4g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <header>
+    <div class="header-container">
+      <div class="logo">
+        <img src="WhatsApp Image 2025-06-09 at 8.56.21 PM.jpeg" alt="Logo do site">
+        <span class="logo-text">Livre-Se</span>
+      </div>
+      <nav>
+        <a href="index.html"><i class="fa-solid fa-house"></i></a>
+        <a href="Navegar.html"><i class="fa-solid fa-book"></i></a>
+        <a href="quiz.html"><i class="fa-solid fa-question"></i>
+          <a href="carrinho.html"><i class="fa-solid fa-cart-shopping"></i></a>
+          <a href="perfil.html"><i class="fa-solid fa-user"></i></a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container-principal">
+    <div class="thumbnail-gallery">
+      <img src="livro3d.png" class="thumbnail-item active" data-type="3d" alt="Livro 3D">
+      <img src="iih.jpg" class="thumbnail-item" data-type="image" data-src="iih.jpg" alt="Capa">
+      <img src="orelhaalasca.jpg" class="thumbnail-item" data-type="image" data-src="orelhaalasca.jpg" alt="Orelha">
+      <img src="contracapa.png" class="thumbnail-item" data-type="image" data-src="contracapa.png" alt="Contracapa">
+    </div>
+
+    <div class="livro-container">
+      <div class="book" id="main-book">
+        <div class="book-img">
+          <div class="front"></div>
+          <div class="back"></div>
+        </div>
+        <div class="text">
+          <h2>À procura de um Grande Talvez...</h2>
+          <p>Cansado de sua vida monótona na Flórida, Miles decidiu se matricular em Culver Creek, o mesmo internato no
+            Alabama em que seu pai estudou. Ele parte em busca de um Grande Talvez – últimas palavras de François
+            Rabelais, um poeta do século XVI. Enquanto busca se encontrar e descobrir quem é, ele vive experiências
+            inesquecíveis ao lado de Coronel, Takumi e da enigmática Alasca. Depois dela, a vida de Miles nunca mais
+            será a mesma.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="info-compra">
+      <h1>Quem é você, Alasca?: Edição comemorativa de 10 anos</h1>
+
+      <div class="preco-principal">
+        <span class="simbolo">R$</span>
+        <span class="valor">34</span>
+        <span class="centavos">,99</span>
+      </div>
+
+      <div class="avaliacao">
+        <span class="estrelas">
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star-half-o"></i>
+        </span>
+        <span class="total-avaliacoes">(82)</span>
+      </div>
+
+      <div class="botoes-acao">
+        <button class="btn-comprar">Comprar agora</button>
+        <div class="botoes-secundarios">
+          <button class="btn-adicionar" onclick="adicionarAoCarrinho()">
+            <i class="fa fa-cart-plus"></i>
+          </button>
+          <button class="btn-alugar">Alugue</button>
+        </div>
+      </div>
+
+      <div class="info-entrega">
+        <p>Estoque disponível: <b>20</b></p>
+        <p>Vendido e entregue por <a href="#">naoseilivrarias</a></p>
+      </div>
+    </div>
+  </main>
+
+  <!-- Alerta bonitinho pq jnguem merece -->
+  <div id="meu-alerta" class="alerta" onclick="fecharAlerta()">Livro adicionado ao carrinho!</div>
+
+  <!-- sicripits -->
+  <script src="https://kit.fontawesome.com/5de7a887ef.js" crossorigin="anonymous"></script>
+  <script src="javalivro.js"></script>
+</body>
+
+</html>
