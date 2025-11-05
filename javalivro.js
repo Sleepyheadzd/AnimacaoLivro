@@ -44,7 +44,7 @@ function renderCarrinho() {
   freteElement.textContent = `R$${freteFixo.toFixed(2)}`;
   totalGeralElement.textContent = `R$${(subtotal + freteFixo).toFixed(2)}`;
 
-  // Depois de carregar, adiciona os botoes uncionais
+  // depois de carregar, adiciona os botoes funcionais
   adicionarEventosBotoes();
 }
 
@@ -136,3 +136,4 @@ function adicionarAoCarrinho() {
 document.addEventListener("DOMContentLoaded", () => {
   renderCarrinho();
 });
+
